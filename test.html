@@ -1,0 +1,410 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="author" content="webthemez">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lotus</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/font-icon.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="css/style4.css" />
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.1/animate.min.css">
+
+
+
+</head>
+<style>
+<script>
+function changeVisibility() {
+  document.getElementById("gal").style.visibility = "hidden";
+}
+</script>
+/*
+ * jQuery FlexSlider v2.5.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ * 
+ */
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url('fonts/flexslider-icon.eot');
+  src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+.flex-container a:hover,
+.flex-slider a:hover,
+.flex-container a:focus,
+.flex-slider a:focus {
+  outline: none;
+}
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+* html .flexslider .slides {
+  height: 1%;
+}
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+.flexslider {
+  position: relative;
+  zoom: 1;
+}
+.flexslider .slides {
+  zoom: 1;
+}
+.flexslider .slides img {
+  height: auto;
+}
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.loading .flex-viewport {
+  max-height: 300px;
+}
+.carousel li {
+  margin-right: 5px;
+}
+.flex-direction-nav {
+  *height: 0;
+}
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right;
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+.flex-direction-nav .flex-disabled {
+  opacity: 0!important;
+  filter: alpha(opacity=0);
+  cursor: default;
+}
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: '\f004';
+}
+.flex-pauseplay a:hover {
+  opacity: 1;
+}
+.flex-pauseplay a.flex-play:before {
+  content: '\f003';
+}
+.flex-control-nav {
+  width: 50%;
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  text-align: center;
+  z-index: 100;
+}
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #fff;
+  background: rgba(255,255,255, 0.2);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.flex-control-paging li a:hover {
+  background: #fff;
+  background: rgba(255,255,255, 1);
+}
+.flex-control-paging li a.flex-active {
+  background: #fff;
+  background: rgba(255,255,255, 1);
+  cursor: default;
+}
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+.flex-control-thumbs img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}
+
+</style>
+<body>
+<section class="banner" role="banner" id="home">
+ 
+  <header id="header">
+    <div class="header-content clearfix"> <a class="logo" href="index.html">Lotus Beauty <span>Centre</span></a>
+      <nav class="navigation" role="navigation">
+        <ul class="primary-nav">
+		  <li ><a  href="index.html"  >Home</a></li>
+		<!-- <li><a href="#intro">designes</a></li>--> 
+		
+          <li><a href="about.html">About</a></li> 
+          <li><a href="gallery.html">Gallery</a></li>
+          <!--<li><a href="#teams">Team</a></li>-->
+		  
+          <li><a href="services.html">Services</a></li>
+          <li><a href="test.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+  </header>
+  </section>
+  
+<!-- our team section 
+<!-- Testimonials section -->
+<section id="testimonials" class="section testimonials no-padding">
+  <div class="container-fluid" >
+  <div class="section-header" style="margin-top: 130px;" >
+                <h2 class="wow fadeInDown animated"></h2>
+               <!-- <p class="wow fadeInDown animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>-->
+            </div>
+    <div class="row no-gutter">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <div class="col-md-12">
+              <blockquote>
+                <p>"Samantha did my hairdo and make up for my wedding. I was so glad that I chose her. She did a great job. Her timing and perfection is much appreciated. She completed it on time and my family was so happy with the work she had done one me. I recommended her to many of my friends and everyone were super satisfied with her work. I wish her all the success and many more big things in her life. Thanks Sam for showing me pretty on my BIG day." </p>
+                <p>Keerthi</p>
+              </blockquote>
+            </div>
+          </li>
+          <li>
+            <div class="col-md-12">
+              <blockquote>
+                <p>"Went here and just loved everything about this place. To start with, the ambience is so calm and good. Everyone is so friendly and I loved the hospitality. The salon has a dedicated space for each and every service. And talk about hygiene, which is very important to me. I have been to a lot of salons in different parts of India , and have never seen anything as hygienic as wink. They put in utmost care of every small detailing. Most painless waxing and the products used here are unique. I loved the place a lot. Clearly a place with a lot of effort and thoughts put in, I would say. Must try everyone.." </p>
+                <p>Ramya</p>
+              </blockquote>
+            </div>
+          </li>
+          <li>
+            <div class="col-md-12">
+              <blockquote>
+                <p>"After so much expectation and excitement, I finally got to visit WINK to get a haircut. My mom was so enamored by the place and hospitality that she ended up getting a hair cut too. Sridhar did an amazing job with the haircut and styling. Unlike other salons in the city, WINK analyses your scalp and uses hair products accordingly. Thank you WINK for your kick-ass service and personalized treatment." </p>
+                <p>Lakshmi</p>
+              </blockquote>
+            </div>
+          </li>
+          <li>
+            <div class="col-md-12">
+              <blockquote>
+                <p>"You go there for a simple haircut. And what you get is an awesome experience, an amazing makeover that transforms you completely. The same eppadi iruntha naan eppadi aagitten moment definitely a must visit place anyone willing to experience something really good. The decor is absolutely tasteful and totally warrants a five star rating. Good luck for your success guys." </p>
+                <p>Sakthi</p>
+              </blockquote>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Testimonials section --> 
+<!-- contact section --> 
+<!-- Footer section -->
+<footer class="footer">
+<div class="container-fluid">
+<div id="map-row" class="row">
+    <div class="col-xs-12">    
+    	<!--<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/search/No.98%2F136,+Omsakthi+Complex,%09Pallivasal+Street,Pattukkottai-614609/@10.2311827,77.0712388,8z/data=!3m1!4b1"></iframe> 
+      -->
+	   <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" ></iframe>
+          <div id="map-overlay" class="col-xs-5 col-xs-offset-6" style="">
+    		<h4 style="margin-top:0;color:#fff;">Address</h4>
+    		<address style="color:#fff;">
+    			No.98/136, Omsakthi Complex,<br>
+    		Pallivasal Street,<br>
+    			Pattukkottai-614609<br>
+    			
+    			<abbr title="Phone">Tel:</abbr> +91 86677 32122
+    		</address>
+			  © 2019 Company Name. All Rights Reserved. <br/><a target="_blank" href="https://webthemez.com/tag/free" title="Bootstrap Templates"></a> By Yellowthemez.com
+    	</div>
+    </div>
+	 </div>
+</div>
+</footer>
+
+<!-- Footer section --> 
+<!-- JS FILES --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.flexslider-min.js"></script> 
+<script src="js/jquery.fancybox.pack.js"></script> 
+<script src="js/retina.min.js"></script> 
+<script src="js/modernizr.js"></script> 
+<script src="js/main.js"></script> 
+<script type="text/javascript" src="js/jquery.contact.js"></script> 
+</body>
+</body>
+
+  </html>

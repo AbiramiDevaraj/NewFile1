@@ -23,9 +23,66 @@
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.1/animate.min.css">
+
+
+
 </head>
 
 <style>
+.about_section_head {
+    background: #e8206b;
+    padding: 70px;
+    text-align: center;
+}
+.line_white {
+    background: #ffffff;
+}
+
+.line_color {
+   
+    height: 3px;
+    width: 80px;
+    margin: 0 auto 20px;
+}
+.about_section_content_2 {
+    background: url(images/home_about_section.jpg) no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.about_section_content_2 {
+    background: url(images/home_about_section.jpg) no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+@media (min-width: 768px)
+.col-md-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about_section_content_2_copy_inner {
+    background: #e8206b;
+    padding: 70px;
+}
+.about_section_content_2_copy_2 {
+    height: 700px;
+    width: 100%;
+    display: table;
+    padding: 0;
+}
+
+.about_section_content_2_copy {
+    height: 300px;
+    vertical-align: middle;
+    display: table-cell;
+}
+@media (min-width: 768px)
+.offset-md-7 {
+    margin-left: 58.333333%;
+}
 <script>
 function changeVisibility() {
   document.getElementById("gal").style.visibility = "hidden";
@@ -39,14 +96,16 @@ function changeVisibility() {
     <div class="header-content clearfix"> <a class="logo" href="index.html">Lotus Beauty <span>Centre</span></a>
       <nav class="navigation" role="navigation">
         <ul class="primary-nav">
-		 <li ><a  href="#home"  >Home</a></li>
+		 <li ><a  href="index.html"  >Home</a></li>
 		<!-- <li><a href="#intro">designes</a></li>--> 
-          <li><a href="#Bride_Groom">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#content-3-10">About</a></li> 
+		
+          <li><a href="about.html">About</a></li> 
+          <li><a href="gallery.html">Gallery</a></li>
           <!--<li><a href="#teams">Team</a></li>-->
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+		  
+          <li><a href="services.html">Services</a></li>
+          <li><a href="test.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
       <a href="#" class="nav-toggle">Menu<span></span></a> </div>
@@ -103,6 +162,29 @@ function changeVisibility() {
 </div>
   
 </section>
+
+<div class="col-md-12 about_section_head" style="margin-top:10px;margin-bottom:10px;">
+<div class="container">
+<h3 style="color:#f9f2ef;">The world has changed. We haven’t.</h3>
+<div class="line_color line_white"></div>
+<p style="color:#f9f2ef;">Customer-safety has always been at the heart of our business. It is a part of our culture, part of who we are. Today, we continue to reinvent hygiene systems, and follow sanitisation protocols used by healthcare institutions. For your safety, and ours.</p>
+</div>
+</div>
+
+<div  style="    display: block;" class="col-md-12 about_section_content_2">
+<div class="row">
+<div class="col-md-5 offset-md-7 about_section_content_2_copy_2">
+<div class="about_section_content_2_copy">
+<!--<div class="about_section_content_2_copy_inner">
+<h3>Bringing back beauty, safely.</h3>
+<div class="line_color line_white"></div>
+<p>Read about all the precautions and steps we have been taking to make sure you can continue to have a safe salon experience.</p>
+
+</div>-->
+</div>
+</div>
+</div>
+</div>
 <!-- header section --> 
 <!-- intro section -->
 <!--  <section id="intro" class="section intro">
@@ -115,7 +197,8 @@ function changeVisibility() {
 </section>-->
 <!-- intro section --> 
 <!-- section -->
-<section id="Bride_Groom">
+   
+  <!-- <section id="Bride_Groom">
   <div class="container"> 
   
     <div class="row">  
@@ -132,74 +215,7 @@ function changeVisibility() {
 				<h4>Eyebrow Threading</h4>
 				<!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p> 
 				<a href="details.html" class="morebtn">More</a>-->
-				</div>
-			</div>
-				<div class="col-md-3">  
-				<img src="images/facial-bleaching.jpg" style="height: 191px;" alt="bride" class="img-middle"/>
-				<div class="align-center">
-				<h4>Bleach and Facial</h4>
-			<!--	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p> 
-				<a href="details.html" class="morebtn">More</a>-->
-				</div>
-			</div> 
-			<div class="col-md-3">  
-				<img src="images/hair-spa.jpg" alt="bride" style="height: 191px;" class="img-middle"/>
-				<div class="align-center">
-				
-				<h4> Hair Spa & Hair Cut</h4>
-			<!--	<h4>Hair Treatement & Coloring</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p> 
-				<a href="details.html" class="morebtn">More</a>-->
-				</div>
-			</div> 
-			<div class="col-md-3">  
-				<img src="images/hair_straighting.jpg" alt="bride"  style="height: 191px;" class="img-middle"/>
-				<div class="align-center">
-				<h4>Hair Straightening</h4>
-			<!--	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p> 
-				<a href="details.html" class="morebtn">More</a>-->
-				</div>
-			</div> 
-    	</div>
 		
-		   <div class="row" style="margin-left:-15px !important;margin-right:0px!important;"> 
-    		<div class="col-md-3">
-				
-				<img src="images/hair_treatement.jpg" alt="bride" class="img-middle"/>
-				<div class="align-center">
-				<h4>Hair Treatement & Coloring</h4>
-				<!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p> 
-				<a href="details.html" class="morebtn">More</a>-->
-				</div>
-			</div>
-				<div class="col-md-3">  
-				<img src="images/waxing.jpg" style="height: 191px;" alt="bride" class="img-middle"/>
-				<div class="align-center">
-				<h4>Waxing</h4>
-			<!--	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p> 
-				<a href="details.html" class="morebtn">More</a>-->
-				</div>
-			</div> 
-			<div class="col-md-3">  
-				<img src="images/bride1.jpg" alt="bride" style="height: 191px;" class="img-middle"/>
-				<div class="align-center">
-				<h4> Bridal Makeup</h4>
-			<!--	<h4>Hair Treatement & Coloring</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p> 
-				<a href="details.html" class="morebtn">More</a>-->
-				</div>
-			</div> 
-			<div class="col-md-3">  
-				<img src="images/jws.jpg" alt="bride"  style="height: 191px;" class="img-middle"/>
-				<div class="align-center">
-				<h4>‎Bridal Jewelry on Rent</h4>
-			<!--	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p> 
-				<a href="details.html" class="morebtn">More</a>-->
-				</div>
-			</div> 
-    	</div>
-		
-		</div>    
-  </div>
-</section>
 <!-- section --> 
 <!-- services section
 <section id="services" class="services service-section">
@@ -231,7 +247,7 @@ function changeVisibility() {
   </div>
 </section>
 <!-- services section --> 
-<!--About-->
+<!--About-
 <section id="content-3-10" class="content-block data-section nopad content-3-10">
 	<div class="image-container col-sm-6 col-xs-12 pull-left">
 		<div class="background-image-holder">
@@ -256,151 +272,6 @@ service to our esteemed
 customers.
 
 </p>
-				</div>
-				<a href="#gallery" class="btn btn-outline btn-outline outline-dark">Gallery</a>
-			</div>
-		</div><!-- /.row-->
-	</div>
-<!-- /.container -->
-</section>
-	 <div class="section-header">
-                <h2 class="wow fadeInDown animated">Certificates</h2>
-               <!-- <p class="wow fadeInDown animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>-->
-            </div>
-	<div class="row no-gutter">
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/1.jpeg" class="work-box"> <img style="height: 344px;"  src="images/certificates/1.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-             <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/2.jpeg" class="work-box"> <img style="height: 344px;"  src="images/certificates/2.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/3.jpeg" class="work-box"> <img style="height: 344px;"  src="images/certificates/3.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/4.jpeg" class="work-box"> <img style="height: 344px;"  src="images/certificates/4.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption"> 
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/5.jpeg" class="work-box"> <img style="height: 344px;"  src="images/certificates/5.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/6.jpeg" class="work-box"> <img  style="height: 344px;" src="images/certificates/6.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/7.jpeg" class="work-box"> <img style="height: 344px;"  src="images/certificates/7.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/8.jpeg" class="work-box"> <img  style="height: 344px;" src="images/certificates/8.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-             <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-    </div>
- 
-<div class="row no-gutter">
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/9.jpeg" class="work-box"> <img style="height: 344px;"  src="images/certificates/9.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-             <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/10.jpeg" class="work-box"> <img style="height: 344px;"  src="images/certificates/10.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/11.jpeg" class="work-box"> <img style="height: 344px;"  src="images/certificates/11.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/12.jpeg" class="work-box"> <img style="height: 344px;"  src="images/certificates/12.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption"> 
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/13.jpeg" class="work-box"> <img style="height: 344px;"  src="images/certificates/13.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/14.jpeg" class="work-box"> <img  style="height: 344px;" src="images/certificates/14.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/15.jpeg" class="work-box"> <img style="height: 344px;"  src="images/certificates/15.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/certificates/16.jpeg" class="work-box"> <img  style="height: 344px;" src="images/certificates/15.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-             <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-    </div>
- 
 
 <!-- videos section 
 <section class="video-section">
@@ -419,271 +290,17 @@ customers.
 				</div>
 			</div> 
     	</div>
-			</div><!-- end row -->    
-  </div>
-</section>
-<!-- videos section --> 
+
 
 <!-- gallery section -->
+<!--
 <section id="gallery" class="gallery section">
   <div class="container-fluid">
     <div class="section-header">
                 <h2 class="wow fadeInDown animated">Gallery</h2>
                <!-- <p class="wow fadeInDown animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>-->
-            </div>
-    <div class="row no-gutter">
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/1.jpeg" class="work-box"> <img style="height: 344px;" src="images/portfolio/1.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-             <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/2.jpeg" class="work-box"> <img style="height: 344px;" src="images/portfolio/2.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/3.jpeg" class="work-box"> <img  style="height: 344px;" src="images/portfolio/3.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/4.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/4.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption"> 
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/5.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/5.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/6.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/6.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/7.jpeg" class="work-box"> <img  style="height: 344px;" src="images/portfolio/7.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/8.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/8.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-             <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-    </div>
-
-<div id="demo" class="collapse">
-	 <div class="row no-gutter">
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/9.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/9.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-             <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/22.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/22.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/11.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/11.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/12.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/12.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption"> 
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/13.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/13.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/14.jpeg" class="work-box"> <img  style="height: 344px;" src="images/portfolio/14.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/15.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/15.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/16.jpeg" class="work-box"> <img  style="height: 344px;" src="images/portfolio/16.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-             <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-    </div>
- 
-   <div class="row no-gutter">
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/17.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/17.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-             <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/18.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/18.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/19.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/19.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/20.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/20.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption"> 
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/23.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/21.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/24.jpeg" class="work-box"> <img  style="height: 344px;" src="images/portfolio/14.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/25.jpeg" class="work-box"> <img style="height: 344px;"  src="images/portfolio/25.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/portfolio/10.jpeg" class="work-box"> <img  style="height: 344px;" src="images/portfolio/16.jpeg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-             <p><span class="icon icon-magnifying-glass"></span></p>
-          </div>
-        </div>
-        <!-- overlay --> 
-        </a> </div>
-    </div>
- 
-  </div>
-  	  <button type="button" id="gal" onclick="changeVisibility()"  style="text-align:right;float:right;" class="btn btn-info" data-toggle="collapse" data-target="#demo">More..</button>
-
-  </div>
-</section>
-<!-- gallery section --> 
-<!-- our team section -->
- <!--<section id="teams" class="section teams">
-  <div class="container">
-      <div class="section-header">
-                <h2 class="wow fadeInDown animated">Team</h2>
-                <p class="wow fadeInDown animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <div class="person"><img src="images/team-1.jpg" alt="" class="img-responsive">
-          <div class="person-content">
-            <h4>Jonh Dow</h4> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eget risus vitae massa.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="person"> <img src="images/team-2.jpg" alt="" class="img-responsive">
-          <div class="person-content">
-            <h4>Markus Linn</h4> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eget risus vitae massa.</p>
-          </div> 
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="person"> <img src="images/team-3.jpg" alt="" class="img-responsive">
-          <div class="person-content">
-            <h4>Chris Jemes</h4> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eget risus vitae massa.</p>
-          </div> 
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="person"> <img src="images/team-4.jpg" alt="" class="img-responsive">
-          <div class="person-content">
-            <h4>Vintes Mars</h4> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eget risus vitae massa.</p>
-          </div> 
-        </div>
-      </div>
-    </div>
-  </div>
-</section>-->
-<!-- our team section 
-<!-- Testimonials section -->
+   
+<!--
 <section id="testimonials" class="section testimonials no-padding">
   <div class="container-fluid">
     <div class="row no-gutter">
@@ -726,9 +343,11 @@ customers.
     </div>
   </div>
 </section>
+
+
 <!-- Testimonials section --> 
 
-<!-- contact section -->
+<!-- contact section 
 <section id="contact" class="section">
   <div class="container">
       <div class="section-header">
@@ -736,24 +355,9 @@ customers.
                <!-- <p class="wow fadeInDown animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
 
 -->
-		   </div>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 conForm">       
-        <div id="message"></div>
-        <form method="post" action="php/contact.php" name="cform" id="cform">
-          <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." >
-          <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." >
-          <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Message..."></textarea>
-          <input type="submit" id="submit" name="send" class="submitBnt" value="Send">
-          <div id="simple-msg"></div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
 <!-- contact section --> 
 <!-- Footer section -->
-<footer class="footer">
+<footer class="footer" style="margin-top:30px;">
 <div class="container-fluid">
 <div id="map-row" class="row">
     <div class="col-xs-12">    
