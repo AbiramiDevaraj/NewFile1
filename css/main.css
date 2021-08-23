@@ -93,7 +93,7 @@ background: #232323 !important;
 }
 #map-overlay {
     height:400px;
-    margin-top:-405px;
+
     background-color: #232323;
     padding:40px;
     color: #848484;
@@ -298,6 +298,16 @@ ul li {
 	transition-duration: 0s;
 	color: #f05da3;
 }
+
+.bottom {
+    color: #ffffff;;
+    border-top: 1px solid #504e4d;
+    font-family: "Poppins", sans-serif;
+	background-color:#232323;
+}
+.bottom .bottom-wrap {
+    padding: 56px 0 55px 0;
+}
 .nav-toggle span {
 	bottom: auto;
 	display: inline-block;
@@ -378,7 +388,79 @@ ul li {
 /* ------------------------------------------------------------------------------
 	Banner
 -------------------------------------------------------------------------------*/
- 
+ .images-logo {
+    margin-bottom: 30px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.hb-sectiontitle h1 span {
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin: 20px 0;
+    line-height: 30px;
+    color: #7a7992;
+    display: block;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Open Sans',sans-serif;
+}
+.hb-sectiontitle:before {
+    left: 50%;
+    bottom: 0;
+    z-index: 1;
+    content: '';
+    width: 280px;
+    height: 1px;
+    position: absolute;
+    background: #c1bfda;
+    margin: 0 0 0 -140px;
+}
+.hb-sectiontitle:after {
+    left: 50%;
+    z-index: 2;
+    content: "";
+    width: 80px;
+    height: 25px;
+    bottom: -12px;
+    text-align: center;
+    position: absolute;
+    margin: 0 0 0 -40px;
+    background: #fff url(../../images/heading-icon.png) no-repeat 50%;
+}
+.hb-sectiontitle {
+    float: left;
+    width: 100%;
+    margin: 0 0 45px;
+    padding: 0 0 35px;
+    text-align: center;
+    position: relative;
+}
+.hb-headcontent {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.hb-sectionhead {
+    float: left;
+    width: 100%;
+}
+.hb-services.v2 .hb-description {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.hb-headcontent .hb-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #7a7992;
+    font-weight: 300;
+}
+.hb-description {
+    width: 100%;
+    float: left;
+}
+
 #first-slider .main-container {
   padding: 0;
 }
