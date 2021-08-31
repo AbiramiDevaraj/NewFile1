@@ -8,7 +8,28 @@
 /* ------------------------------------------------------------------------------
 	Slider Images URL
 -------------------------------------------------------------------------------*/
+.fontawasomeicon{
+	    margin-top: 16px;
+    color: white;
+	
+}
 
+
+.sitelogo {
+    display:inline-block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+	margin-bottom:30px;
+	pointer-events: auto;
+	
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    text-align: center;
+    font-size: 30px;
+	    color: #FFF;
+    border-radius: 50px;
+}
 #first-slider .slide1 {
     background-image: url('../images/slides/1.jpg');
    background-size: cover;
