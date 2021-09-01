@@ -161,7 +161,7 @@ background: #232323 !important;
 	padding: 15px 40px;
 }
 #map-overlay {
-    height:400px;
+   /* height:400px;*/
 
     background-color: #232323;
     padding:40px;
